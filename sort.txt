@@ -18,3 +18,9 @@ PORT   STATE  SERVICE VERSION
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 # Nmap done at Fri Nov 25 07:44:19 2022 -- 1 IP address (1 host up) scanned in 6.90 seconds
+22/tcp closed ssh
+80/tcp closed http
+22/tcp closed ssh
+80/tcp closed http
+22/tcp open   ssh     OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+80/tcp closed http

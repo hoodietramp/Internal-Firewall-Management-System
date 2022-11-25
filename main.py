@@ -7,14 +7,14 @@ WIDTH = 800
 
 def scan(entry):
         print("[+] pinging!", entry)
-        response = os.system(f"nmap -n -sP {entry} | tee nmap.txt")
+        response = os.system(f"nmap -n -sP {entry}"+" | grep report | awk {'print $5'} > nmap.txt")
         with open('nmap.txt') as f:
             contents = f.read()
-            label.config(text=f'These Hosts Are Up: {contents}')
+            label.config(text=f'These Hosts Are Up:\n {contents}')
 
 def nextOut(entry):
         print("[+] Port Scanning : ", entry)
-        output = os.system(f"nmap -T5 -sVC -p22,80 {entry} -oN nmap; head nmap > sort.txt; tail nmap >> sort.txt")
+        output = os.system(f"nmap -T5 -sVC -p22,80 {entry} -oN nmap | grep '/tcp' > sort.txt")
         with open('sort.txt') as f:
             portScan = f.read()
         label.config(text=f'{portScan}')
