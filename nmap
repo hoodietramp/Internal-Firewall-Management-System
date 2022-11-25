@@ -1,44 +1,12 @@
-# Nmap 7.93 scan initiated Fri Nov 25 06:14:19 2022 as: nmap -T5 -sVC -p22,80 -oN nmap 192.168.5.1/24
-Nmap scan report for 192.168.5.2
-Host is up (0.0022s latency).
-
-PORT   STATE  SERVICE VERSION
-22/tcp closed ssh
-80/tcp closed http
-
-Nmap scan report for 192.168.5.128
-Host is up (0.00032s latency).
-
-PORT   STATE  SERVICE VERSION
-22/tcp closed ssh
-80/tcp closed http
-
-Nmap scan report for 192.168.5.136
-Host is up (0.0012s latency).
-
-PORT   STATE  SERVICE VERSION
-22/tcp closed ssh
-80/tcp closed http
-
+# Nmap 7.93 scan initiated Fri Nov 25 07:44:12 2022 as: nmap -T5 -sVC -p22,80 -oN nmap 192.168.5.137
 Nmap scan report for 192.168.5.137
-Host is up (0.0011s latency).
+Host is up (0.00070s latency).
 
 PORT   STATE  SERVICE VERSION
 22/tcp closed ssh
 80/tcp open   http    Apache httpd 2.4.52 ((Ubuntu))
-|_http-title: Apache2 Ubuntu Default Page: It works
 |_http-server-header: Apache/2.4.52 (Ubuntu)
-
-Nmap scan report for 192.168.5.138
-Host is up (0.0014s latency).
-
-PORT   STATE  SERVICE VERSION
-22/tcp open   ssh     OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-|   256 a3fa60b6c538a038ea340e9b28b56e82 (ECDSA)
-|_  256 644cec3026d637d06398de522113d6fe (ED25519)
-80/tcp closed http
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+|_http-title: Apache2 Ubuntu Default Page: It works
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Fri Nov 25 06:14:32 2022 -- 256 IP addresses (5 hosts up) scanned in 13.52 seconds
+# Nmap done at Fri Nov 25 07:44:19 2022 -- 1 IP address (1 host up) scanned in 6.90 seconds

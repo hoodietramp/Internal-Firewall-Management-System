@@ -19,6 +19,20 @@ def nextOut(entry):
             portScan = f.read()
         label.config(text=f'{portScan}')
 
+def dyeIp(entry):
+    print("[.] Blocking -> ", entry)
+    oyo = os.system("echo 'Blocking -> ' > iniEE")
+    with open('iniEE') as f:
+        iniE = f.read()
+    label.config(text=f'{iniE}')    
+    ayo = os.system(f"iptables -A OUTPUT -s {entry} -j DROP; service iptables save")
+    yoo = os.system("echo 'Blocked Successfully!' > ipTablesSave")
+    with open('ipTablesSave') as f:
+        endE = f.read()
+    label.config(text=f'{endE}')
+    print("[.] Blocked Successfully!")
+    
+
         
 def playAni():
     anim = os.system("echo 'Vamos!' | cowsay > anim")
@@ -51,10 +65,13 @@ lower_frame.place(relx=0.5, rely=0.25, relwidth=0.75, relheight=0.6, anchor='n')
 label = tk.Label(lower_frame, bg='#e8f8fd')
 label.place(relwidth=1, relheight=1)
 
-on_button = tk.Button(label, text="play", bg='#262626', fg='#f2f2f2', font=("Terminal",21), command=playAni)
+on_button = tk.Button(label, text="Play", bg='#262626', fg='#f2f2f2', font=("Terminal",21), command=playAni)
 on_button.place(relx=0.8,rely=0.89, relwidth=0.2, relheight=0.1)
 
-nextBtn = tk.Button(label, text="next", bg='#252525', fg='#f2f2f2', font=("Terminal", 15), command=lambda: nextOut(entry.get()))
+nextBtn = tk.Button(label, text="Next", bg='#252525', fg='#f2f2f2', font=("Terminal", 15), command=lambda: nextOut(entry.get()))
 nextBtn.place(relx=0.9, rely=0.01, relwidth=0.1, relheight=0.1)
+
+ipTab = tk.Button(root, text="Block", bg='#252525', fg='#f2f2f2', font=("Terminal, 15"), command=lambda: dyeIp(entry.get()))
+ipTab.place(relx=0.65, relheight=0.08, relwidth=0.22)
 
 root.mainloop()

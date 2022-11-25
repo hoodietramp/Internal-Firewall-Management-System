@@ -1,12 +1,10 @@
-Starting Nmap 7.93 ( https://nmap.org ) at 2022-11-25 06:15 IST
+Starting Nmap 7.93 ( https://nmap.org ) at 2022-11-25 07:36 IST
 Nmap scan report for 192.168.5.2
-Host is up (0.0034s latency).
+Host is up (0.0022s latency).
 Nmap scan report for 192.168.5.128
-Host is up (0.00011s latency).
-Nmap scan report for 192.168.5.136
-Host is up (0.00057s latency).
+Host is up (0.00048s latency).
 Nmap scan report for 192.168.5.137
-Host is up (0.0018s latency).
+Host is up (0.0034s latency).
 Nmap scan report for 192.168.5.138
-Host is up (0.0016s latency).
-Nmap done: 256 IP addresses (5 hosts up) scanned in 2.31 seconds
+Host is up (0.0030s latency).
+Nmap done: 256 IP addresses (4 hosts up) scanned in 2.42 seconds
