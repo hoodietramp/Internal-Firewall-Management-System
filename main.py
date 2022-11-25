@@ -25,7 +25,7 @@ def dyeIp(entry):
     with open('iniEE') as f:
         iniE = f.read()
     label.config(text=f'{iniE}')    
-    ayo = os.system(f"iptables -A OUTPUT -s {entry} -j DROP; service iptables save")
+    ayo = os.system(f"iptables -A OUTPUT -s {entry} -j DROP")
     yoo = os.system("echo 'Blocked Successfully!' > ipTablesSave")
     with open('ipTablesSave') as f:
         endE = f.read()
