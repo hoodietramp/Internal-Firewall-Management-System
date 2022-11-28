@@ -52,7 +52,7 @@ background_image = tk.PhotoImage(file='black.png')
 background_label = tk.Label(root, image=background_image)
 background_label.place(x=0,y=0, relwidth=1, relheight=1)
 
-frame = tk.Frame(root, bd=5, bg='#fde8ed')
+frame = tk.Frame(root, bd=5, bg='#92004e')
 frame.place(relx=0.5, rely=0.1, relwidth=0.75, relheight=0.1, anchor='n')
 
 entry = tk.Entry(frame, font=40, bg='#fdfde8')
@@ -61,7 +61,7 @@ entry.place(relwidth=0.65, relheight=1)
 button = tk.Button(frame, text="Scan", bg='#262626', fg='#f2f2f2', font=15, command=lambda: scan(entry.get()))
 button.place(relx=0.7, relwidth=0.3, relheight=1)
 
-lower_frame = tk.Frame(root, bg='#fde8ed', bd=10)
+lower_frame = tk.Frame(root, bg='#92004e', bd=10)
 lower_frame.place(relx=0.5, rely=0.25, relwidth=0.75, relheight=0.6, anchor='n')
 
 label = tk.Label(lower_frame, bg='#e8f8fd')
@@ -70,7 +70,7 @@ label.place(relwidth=1, relheight=1)
 on_button = tk.Button(label, text="vamos", bg='#262626', fg='#f2f2f2', font=("Terminal",15), command=playAni)
 on_button.place(relx=0.8,rely=0.89, relwidth=0.2, relheight=0.1)
 
-nextBtn = tk.Button(label, text="Services", bg='#252525', fg='#f2f2f2', font=("Terminal", 15), command=lambda: nextOut(entry.get()))
+nextBtn = tk.Button(label, text="Services", bg='#252525', fg='#f2f2f2', font=("Helvetica", 10), command=lambda: nextOut(entry.get()))
 nextBtn.place(relx=0.9, rely=0.01, relwidth=0.1, relheight=0.1)
 
 ipTab = tk.Button(root, text="Block", bg='#252525', fg='#f2f2f2', font=("Terminal, 15"), command=lambda: dyeIp('nmap.txt'))
