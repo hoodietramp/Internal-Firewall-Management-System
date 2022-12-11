@@ -27,7 +27,7 @@ as You See Mates Pretty Quickly it Shows you all the live hosts on the same netw
 
 > Now By default it'll again scan the whole subnet you entered in the entry field - for services and os info. <br />
 
-![image](Images/cdport.png)
+![image](Images/port.png)
 
 ```
 Now Just look at the information it's crazy right and its handy to just get to know what devies are connected to your network and what them devices are running on , you can also see the ports that are open in those network ips and the services running on those ports .
