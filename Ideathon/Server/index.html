@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Server</title>
+</head>
+<style>
+*, *::before, *::after {
+    font-family: Impact;
+    background-color: rgb(67, 97, 97);
+}
+h2{
+    text-shadow: 0 0 10px whitesmoke, 0 0 20px rgb(86, 77, 77), 0 0 40px rgb(167, 128, 128), 0 0 50px rgb(224, 120, 120), 0 0 60px rgb(60, 49, 49), 0 0 70px rgba(99, 27, 27, 0.75);
+    font-weight: bold;
+}
+form{
+  color: red;
+}
+#content {
+    margin-left: 35%;
+    margin-right: 25%;
+    margin-top: 20%;  
+  }
+</style>
+<body>
+  <div id="content">
+  <h2>Exploit Cat Server</h2>
+  <form action="upload.php" method="post" enctype="multipart/form-data">
+    <label for="fileToUpload">Select a file to upload:</label>
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload File" name="submit">
+  </form>
+</div>
+</body>
+</html>
+
