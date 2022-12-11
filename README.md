@@ -7,7 +7,7 @@
 
 > This project is basically like your own Internal Network Scanner and also act as an IP Blocker when needed (:<br />
 
-> It got a basic design as what you'll expect from tkinter library and this is also my first time every programming something in python, but it was hella<br />        
+> It got a basic design as what you'll expect from tkinter library and this is also my first time ever programming something in python, but it was hella<br />        
   interesting ride mates learned a lot along the way and guess what python is so awesome with it's libraries :shipit: <br />
 
 `Let's do the basic ping scan first by just giving the subnet mask upto how many ips you wana scan together Just hit the scan button: `<br/>
