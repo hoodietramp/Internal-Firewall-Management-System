@@ -90,6 +90,8 @@ nothing is opened on our kali until you hit the vamos! as it'll open port 7777 f
 
 ![image](Images/list2.png)
 <br />
+--------------
+> Don't forget to add your linux password in place of password in `main.py`<br />
 ---------------
 #### Capture Of A Sad Moment For Us Hackers : <br />
 
