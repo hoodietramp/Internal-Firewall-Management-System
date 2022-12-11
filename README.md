@@ -61,7 +61,6 @@ nothing is opened on our kali until you hit the vamos! as it'll open port 7777 f
 
 ![image](Images/allow1.png)
 
-<br />
 ----------------
 
 ### Starting A File Upload Server: <br />
