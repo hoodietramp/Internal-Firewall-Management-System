@@ -63,6 +63,7 @@ nothing is opened on our kali until you hit the vamos! as it'll open port 7777 f
 
 <br />
 ---------------
+
 ### Starting A File Upload Server: <br />
 
 > If You wana Keep an Ip Blocked but just want to give it access to just simply share some files over the network, well you can by clicking `Vamos`<br />
