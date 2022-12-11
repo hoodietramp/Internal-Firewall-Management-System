@@ -14,7 +14,7 @@ def scan(entry):
 
 def scan_ip_range(entry):
     print("[+] Port Scanning : ", entry)
-    output = os.system(f"echo 'h00di3' | sudo -S nmap -T5 -sS {entry} -oN nmap_output.txt | grep 'scan report\|/tcp\|MAC' > sort.txt")
+    output = os.system(f"echo 'password' | sudo -S nmap -T5 -sS {entry} -oN nmap_output.txt | grep 'scan report\|/tcp\|MAC' > sort.txt")
     with open('sort.txt') as f:
         portScan = f.read()
         label.config(text=f'{portScan}', fg="#A8E6CE", font=("Helvetica", 17))
@@ -24,7 +24,7 @@ def block_ip(ip_entry):
     # os.system("iptables -A INPUT -p icmp --icmp-type echo-request -j REJECT")
 
     print("[+] Blocking Ip : ", ip_entry)
-    os.system(f"echo 'h00di3' | sudo -S iptables -A INPUT -s {ip_entry} -j DROP")
+    os.system(f"echo 'password' | sudo -S iptables -A INPUT -s {ip_entry} -j DROP")
     blocking = os.system("echo 'Blocked Successfully !' | cowsay > block.txt")
     with open('block.txt') as f:
          block = f.read()
@@ -33,7 +33,7 @@ def block_ip(ip_entry):
 
 def allow_ip():
     print("[+] Allowing Ip... DONE!")
-    os.system("echo 'h00di3' | sudo -S iptables -F")
+    os.system("echo 'password' | sudo -S iptables -F")
     blocking = os.system("echo 'Accepted Sucessfully !' | cowsay > accept.txt")
     with open('accept.txt') as f:
         accept = f.read()
@@ -41,20 +41,20 @@ def allow_ip():
 
 def displayRules():
     os.system("echo 'List Of Logs: \n' > ipRules.txt")
-    ipRules = os.system("echo 'h00di3' | sudo -S iptables -L | grep 'anywhere' | head -n 10 >> ipRules.txt")
+    ipRules = os.system("echo 'password' | sudo -S iptables -L | grep 'anywhere' | head -n 10 >> ipRules.txt")
     with open('ipRules.txt') as f:
         blocked_ips = f.read()
         label.config(text=f'{blocked_ips}', fg="#C2649A", font=("Helvetica", 17))
 
 def playAni():
-    os.system("echo 'h00di3' | sudo -S systemctl start apache2; echo 'h00di3' | sudo -S iptables -I INPUT -p tcp -m tcp --dport 7777 -j ACCEPT")
+    os.system("echo 'password' | sudo -S systemctl start apache2; echo 'password' | sudo -S iptables -I INPUT -p tcp -m tcp --dport 7777 -j ACCEPT")
     animation = os.system('echo "Server is up and running..." > vamos.txt; echo "Vamos !" | cowsay >> vamos.txt')
     with open('vamos.txt') as f:
         cow = f.read()
         label.config(text=f'{cow}', fg="#ffcad4", font=("Consolas", 20))
 
 def exitFunction():
-    exiting = os.system("echo 'h00di3' | sudo -S systemctl stop apache2; echo 'h00di3' | sudo -S iptables -A INPUT -p tcp -m tcp --dport 7777 -j DROP")
+    exiting = os.system("echo 'password' | sudo -S systemctl stop apache2; echo 'password' | sudo -S iptables -A INPUT -p tcp -m tcp --dport 7777 -j DROP")
     messsage = os.system("echo 'SERVER DOWN' | figlet -f block > message.txt")
     with open('message.txt') as f:
         msg = f.read()
