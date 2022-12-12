@@ -80,6 +80,11 @@ nothing is opened on our kali until you hit the vamos! as it'll open port 7777 f
 > After the file sharing you can just close the server by hitting `Exit` Button<br />
 
 ![image](Images/exit1.png)
+
+> If you reload the page on ubuntu, the connection will be closed again <br />
+
+![image](Images/block2.png)
+<br />
 ---------------
 ### Checking The Logs: <br />
 
