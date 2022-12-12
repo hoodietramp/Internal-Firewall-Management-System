@@ -47,9 +47,6 @@ nothing is opened on our kali until you hit the vamos! as it'll open port 7777 f
 
 > If You run the ping scan again, you can see the ip is gone from your network.. <br />
 
-![image](Images/block2.png)
-<br />
-
 > The specified ip will be dropped outta your network and i used `iptables` to do that, you could've also used `ufw` but that wouldn't make a lot of difference here as it's just blocking one ip.<br />
 
 > `ufw` is also based on `iptables` but it comes with its own rules (;<br />
